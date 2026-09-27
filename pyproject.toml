@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-fl"
+version = "2.1.0"
+description = "SENTINEL-FL: byte-capped, screened and audited federated learning for wearable sensing"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "threadpoolctl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "black>=24", "pyflakes>=3"]
+
+[project.scripts]
+sentinel-fl = "sentinel_fl.cli:main"
+
+[tool.setuptools]
+packages = ["sentinel_fl"]
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
