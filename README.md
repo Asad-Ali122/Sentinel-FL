@@ -237,12 +237,5 @@ environment (Python, NumPy, pandas, SciPy, scikit-learn versions) and a hash of 
 
 If you use this code, please cite the accompanying paper:
 
-```text
-<author list>, "SENTINEL-FL: A Byte-Budgeted, Screened, and Audited Federated Learning Framework
-for Trustworthy Wearable Health Monitoring," in Proc. 8th IoTBDH Workshop, IEEE Int. Conf. on
-Bioinformatics and Biomedicine (BIBM), 2026.
-```
 
-## License
 
-Add a `LICENSE` file of your choice before publishing.
